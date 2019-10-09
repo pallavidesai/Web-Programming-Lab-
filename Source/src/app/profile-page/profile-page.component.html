@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<body style="height: 800px;">
+  <!-- SideBar -->
+  <div class="w3-sidebar w3-bar-block" >
+    <div class='menuHeader'>
+      <h3 class='menuName'> &nbsp;&nbsp;&nbsp;Menu</h3>
+    </div>
+    <div>
+      <br>
+      <h4> &nbsp;&nbsp; Main Student </h4>
+      <div style="height: 20%;">
+        <a (click)="Hompage()" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+          Hompage</a></div>
+      <div style="height: 20%;">
+        <a (click)="ViewProfile()" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;
+          View Profile</a></div>
+      <div style="height: 20%;">
+        <a href="https://www.umkcbookstore.com/" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+          Discover Books</a></div>
+          <div style="height: 20%;">
+              <a href="https://www.umkc.edu/calendar/" class="w3-bar-item w3-button" style="height: 15%">
+                <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+                Calendar</a></div>
+      <!-- <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-list"></i>&nbsp;
+          Online Courses</a></div>
+      <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-bullhorn"></i>&nbsp;
+          Annoucements</a></div>
+      <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-video-camera"></i>&nbsp;
+          Video Lessons</a></div> -->
+
+      <h4> &nbsp;&nbsp;&nbsp;Friends</h4>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Saitejaswi K</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Pallavi Desai</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Manikanta Somayaji</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Abhimanyu Pandit</a>
+    </div>
+
+
+  </div>
+
+  <div class='pagecontent'>
+
+      <div class="w3-container w3-teal">
+        <div class="row mainheader">
+          <div class="col-md-6">
+            <p  class= 'headerName'>Profile Page</p>
+          </div>
+          <div class="col-md-6">
+              <a (click)="SignOut()"  style="position: relative;left: 75%;top:14px;color: white" class="btn btn-info btn-lg">
+                <span class="fa fa-sign-out"
+                ></span> Log Out
+              </a>
+            </div>
+        </div>
+      </div>
+      <br>
+  <div class="container signupcontainer ">
+    <div class="row">
+      <!-- <div class="col-md-4">
+
+        </div> -->
+      <div class="col-md-6 signdiv">
+        <h4 class="signuptext">Profile Page</h4>
+        <input class="form-control username" [(ngModel)]='firstName' type="text" placeholder="First Name">
+        <br>
+        <input class="form-control username" [(ngModel)]='lastName' type="text" placeholder="Last Name">
+        <br>
+        <input class="form-control username" [readonly]="true" [(ngModel)]='email' type="text" placeholder="Email">
+        <br>
+        <input class="form-control username" [(ngModel)]='phonenumber' type="number" placeholder="Phone number">
+        <br>
+        <input class="form-control password" [readonly]="true" [(ngModel)]='password' type="password" placeholder="Password">
+        <br>
+        <button (click)="ProfileSave()" class="btn btn-dark signupbtn" type="button">Save</button>
+      </div>
+      <div class="col-md-4">
+
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

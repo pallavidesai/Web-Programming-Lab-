@@ -1,0 +1,28 @@
+
+<div class="container signupcontainer">
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4 signdiv">
+                <h4 class="signuptext">Add Courses</h4>
+                <input class="form-control username" [(ngModel)]='courseName' placeholder="Course Name" type="text">
+                <br>
+                <input class="form-control username" [(ngModel)]='courseCategory' placeholder="Course Category" type="text">
+                <br>
+                <input class="form-control username" [(ngModel)]='credits' placeholder="Credits" type="text">
+                <br>
+                <input class="form-control username" [(ngModel)]='examDate' placeholder="Exam Date" type="date">
+                <br>
+                <input class="form-control username" [(ngModel)]='midTermDate' placeholder="Mid term Date" type="date">
+                <br>
+                <button (click)="SaveClick()" class="btn btn-dark  signupbtn" type="button">save</button>
+                &nbsp;
+                <button (click)="DoneClick()" class="btn btn-dark  signupbtn" type="button">Done</button>
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>

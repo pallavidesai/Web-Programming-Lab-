@@ -1,0 +1,42 @@
+.signupcontainer{
+    position: relative;
+    top: 50px;
+
+  }
+  .signdiv{
+    background: royalblue;
+    color: white;
+    border: .2em;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 500px;
+  }
+  .username{
+      position: relative;
+      top: 10%;
+  }
+
+  .password
+  {
+    position: relative;
+    top: 10%;
+  }
+  .signuptext{
+      position: relative;
+      top: 5%;
+      text-align: center;
+  }
+  .signupbtn{
+    position: relative;
+    left: 40%;
+    top: 100px;
+    background-color: blue;
+  }
+
+  .text{
+      text-align: center;
+      position: relative;
+      top: 32%;
+      color: white;
+  }

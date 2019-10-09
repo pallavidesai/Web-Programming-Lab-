@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<head>
+</head>
+
+<body class="Body">
+
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block" >
+    <div class='menuHeader'>
+      <h3 class='menuName'> &nbsp;&nbsp;&nbsp;Student Portal</h3>
+    </div>
+    <div>
+      <br>
+      <h4> &nbsp;&nbsp; Main Student </h4>
+      <div style="height: 20%;">
+        <a (click)="Hompage()" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+          Hompage</a></div>
+      <div style="height: 20%;">
+        <a (click)="ViewProfile()" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;
+          View Profile</a></div>
+      <div style="height: 20%;">
+        <a href="https://www.umkcbookstore.com/" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+          Discover Books</a></div>
+          <div style="height: 20%;">
+              <a href="https://www.umkc.edu/calendar/" class="w3-bar-item w3-button" style="height: 15%">
+                <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;
+                Calendar</a></div>
+      <!-- <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-list"></i>&nbsp;
+          Online Courses</a></div>
+      <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-bullhorn"></i>&nbsp;
+          Annoucements</a></div>
+      <div style="height: 10%;">
+        <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+          <i class="fa fa-video-camera"></i>&nbsp;
+          Video Lessons</a></div> -->
+
+      <h4> &nbsp;&nbsp;&nbsp;Friends</h4>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Saitejaswi K</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Pallavi Desai</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Manikanta Somayaji</a>
+      <a href="#" class="w3-bar-item w3-button" style="height: 15%">
+        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;
+        Abhimanyu Pandit</a>
+    </div>
+
+
+  </div>
+
+  <!-- Page Content -->
+  <div class='pagecontent' style="background-color:aliceblue; ">
+
+    <div class="w3-container w3-teal">
+      <div class="row mainheader">
+        <div class="col-md-6">
+          <p  class= 'headerName'>My Courses</p>
+        </div>
+        <div class="col-md-6">
+            <a (click)="SignOut()"  style="position: relative;left: 75%;top:14px;color: white" class="btn btn-info btn-lg">
+              <span class="fa fa-sign-out"
+              ></span> Log Out
+            </a>
+          </div>
+      </div>
+    </div>
+    <br>
+    <div class="grid-container">
+      <div *ngFor="let courses of coursesData">
+        <div class="grid-item" style = "box-shadow: 10px 10px 5px grey;">
+
+          
+          <div class="row row1" >
+              <div class="col-md-12">
+          <p>{{courses.course}}</p></div></div>
+          <div class="row">
+            <div class="col-md-12">
+                <p style="font-size:16px; position: relative;left: -20px;">{{courses.category}} </p>
+            </div>
+          </div>
+          <div class="row" >
+              <div class="col-md-4">
+                  <p style="font-size:12px;">CREDITS: {{courses.credits}} </p>
+              </div>
+              <div class="col-md-4"><p style="font-size:12px;">{{courses.examDate}}</p></div>
+              <div class="col-md-4 edittrashDiv">
+                <i class="fa fa-trash" (click)="DeleteCourses(courses)" style="font-size:24px;"
+                  aria-hidden="true"></i>&nbsp;
+                <i class="fa fa-edit" (click)="EditCourses(courses)" style="font-size:24px; position: relative; top: 4%"></i></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

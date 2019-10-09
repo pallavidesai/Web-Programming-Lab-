@@ -1,0 +1,20 @@
+<div class="container logincontainer">
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 logindiv">
+            <h4 class="logintext">Login / SignUp</h4>
+            <input class="form-control username" [(ngModel)]='userName' type="text" placeholder="Email" >
+            <input class="form-control password" [(ngModel)]='password' type="password" placeholder="Password" >
+            <button (click)="loginClick()" class="btn btn-dark  loginbtn" type="button">Login</button>
+            <p class="text">Do not have account yet? <a class="text1" routerLink="/register-page">Click Here</a></p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
+
+
+
