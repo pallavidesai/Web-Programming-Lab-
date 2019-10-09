@@ -86,10 +86,19 @@
       <div *ngFor="let courses of coursesData">
         <div class="grid-item" style = "box-shadow: 10px 10px 5px grey;">
 
-          
+            <div class="row " >
+                <div class="col-md-12" >
+                    <img style="height:170px;" src={{courses.imageurl}}>
+                  </div>
+                  <br>
+          </div>
+
+
           <div class="row row1" >
               <div class="col-md-12">
-          <p>{{courses.course}}</p></div></div>
+          <p>{{courses.course}}</p></div>
+        </div>
+
           <div class="row">
             <div class="col-md-12">
                 <p style="font-size:16px; position: relative;left: -20px;">{{courses.category}} </p>

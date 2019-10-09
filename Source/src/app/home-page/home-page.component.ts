@@ -13,19 +13,25 @@ export class HomePageComponent implements OnInit {
   index = 0;
   id = '';
   course_index = '';
+  // imageUrl = '';
 
   constructor(private route: ActivatedRoute, private http1: HttpClient, private router: Router) { }
   url = 'https://api.mlab.com/api/1/databases/htata/collections/weblab?apiKey=bSL6owZlWxFJFxmKC-o3eL92NCtIS04Z';
   ngOnInit() {
+
     this.mailId = this.route.snapshot.params['id'];
     this.http1.get(this.url).subscribe((res: any) => {
       this.index = res.findIndex(e => e.email === this.mailId);
-      this.id = res[this.index]._id['$oid']
+      this.id = res[this.index]._id['$oid'];
 
       let _courses = res[this.index].courses;
+      console.log(_courses);
       this.coursesData = Object.keys(_courses).map(function (k) {
         const i = _courses[k];
-        return {course: i.coursename, category: i.courseCategory, credits: i.credits, examDate: i.examDate, midTermDate: i.midTermDate};
+        const imageUrl = '../../assets/' + i.coursename + '.png';
+        console.log(imageUrl);
+        return {course: i.coursename, category: i.courseCategory, credits: i.credits, examDate: i.examDate,
+          midTermDate: i.midTermDate, imageurl: imageUrl};
       });
 
     });

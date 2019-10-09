@@ -11,7 +11,7 @@
   <!-- SideBar -->
   <div class="w3-sidebar w3-bar-block" >
     <div class='menuHeader'>
-      <h3 class='menuName'> &nbsp;&nbsp;&nbsp;Menu</h3>
+      <h3 class='menuName'> &nbsp;&nbsp;&nbsp;Student Portal</h3>
     </div>
     <div>
       <br>
@@ -92,10 +92,12 @@
         <br>
         <input class="form-control username" [readonly]="true" [(ngModel)]='email' type="text" placeholder="Email">
         <br>
+        <input class="form-control username"  type="text" placeholder="Additional Email">
+        <br>
         <input class="form-control username" [(ngModel)]='phonenumber' type="number" placeholder="Phone number">
         <br>
-        <input class="form-control password" [readonly]="true" [(ngModel)]='password' type="password" placeholder="Password">
-        <br>
+        <!-- <input class="form-control password" [readonly]="true" [(ngModel)]='password' type="password" placeholder="Password">
+        <br> -->
         <button (click)="ProfileSave()" class="btn btn-dark signupbtn" type="button">Save</button>
       </div>
       <div class="col-md-4">
