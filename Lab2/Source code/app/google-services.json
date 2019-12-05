@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "94819566195",
+    "firebase_url": "https://android-icp.firebaseio.com",
+    "project_id": "android-icp",
+    "storage_bucket": "android-icp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94819566195:android:32eb1505f983498cd9e006",
+        "android_client_info": {
+          "package_name": "com.vijaya.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94819566195-46r6lok1rshqpcf4se0dheoej7f74p2l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vijaya.firebase",
+            "certificate_hash": "7488d19372d9fb12bc56255137ce81e9ed63d59f"
+          }
+        },
+        {
+          "client_id": "94819566195-6ah3ddbs2rd9rroorq9o6ftdmssk66vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vijaya.firebase",
+            "certificate_hash": "b1321cb1324e0a04f4bdb257087b0737bf82fe92"
+          }
+        },
+        {
+          "client_id": "94819566195-n2bjl61c5testfh8st1tal2lc8aktn6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_w3lDJvm3rS_0jcVQx8pMBtJsKPbEpW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94819566195-n2bjl61c5testfh8st1tal2lc8aktn6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
